@@ -1,0 +1,11 @@
+@font-face {
+  font-family: 'Karla';
+  src: url('../fonts/Karla-Regular.ttf');
+  color: #1a8cab;
+}
+.header {
+  background: #1a8cab;
+}
+.header li {
+  display: inline;
+}
