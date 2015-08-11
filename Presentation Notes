@@ -1,0 +1,71 @@
+==============================================================================
+
+Selectors 101
+
+by elements...
+    h1 {
+      color: red;
+    }
+
+classnames...
+    .myClassName {
+      height: 30px;
+    }
+
+or ids.
+    #myIdName {
+      width: 40px;
+    }
+
+==============================================================================
+
+Pseudo-classes -
+
+a.homepage:link, a.homepage:visited {
+  padding: 1px 10px 1px 10px;
+  color: #fff;
+  background: #555;
+  border-radius: 3px;
+  border: 1px outset rgba(50,50,50,.5);
+  font-size: 24px;
+  text-decoration: none;
+}
+
+a.homepage:hover, a.homepage:focus, a.homepage:active {
+  background-color: #666;
+}
+
+selects <a> tag with a class of homepage and then specifies how it'll look
+as a link
+once its visited
+when you hover on it
+----> side note on some of the pseudo classes
+Hover is 'true' when the mouse pointer is over an element. Focus is true if the cursor is in that element. 
+It's possible for hover to be false and focus true (e.g click in a text field then move the mouse away)
+Active is the split second interaction, how something will look right as you click
+
+CSS Specificity -
+
+"a.homepage" properties will overwrite "a" properties.
+
+==============================================================================
+
+How can Less help?
+
+Less is a CSS pre-processor, meaning that it extends the CSS language, adding features that allow variables, mixins, functions and many other techniques that allow you to make CSS that is more maintainable, themable and extendable.
+
+Less dev environment:
+  package.json with gulp dependencies
+  gulpfile with a less and less watch action
+  gulp grabs your less file and spits out a css file. 
+  stylesheet link in your html should point to the css file.
+
+Why I like less:
+  color variables
+  specificity is easy to see and organize
+  can pull a class into another class
+
+
+
+
+
